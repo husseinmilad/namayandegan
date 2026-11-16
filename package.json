@@ -1,0 +1,38 @@
+{
+  "name": "namayandegan",
+  "private": true,
+  "version": "1.0.0",
+  "description": "داشبورد مدیریتی و سامانه جامع گزارش حضور نمایندگان هیئت امنا در کارگروه‌های تخصصی",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173",
+    "build": "tsc -b && vite build",
+    "start": "node server.mjs",
+    "lint": "oxlint",
+    "preview": "vite preview --host 0.0.0.0 --port 4173"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "html-to-image": "^1.11.13",
+    "jalaali-js": "^2.0.1",
+    "jspdf": "^4.2.1",
+    "lucide-react": "^1.73.0",
+    "lz-string": "^1.5.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^4.3.5",
+    "vazirmatn": "^33.0.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/jalaali-js": "^1.2.0",
+    "@types/lz-string": "^1.3.34",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.90.0",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6"
+  }
+}
