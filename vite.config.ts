@@ -171,6 +171,7 @@ function localFileStoragePlugin(): Plugin {
 }
 
 export default defineConfig({
+  base: './',
   plugins: [react(), tailwindcss(), localFileStoragePlugin()],
   server: {
     host: '0.0.0.0',
