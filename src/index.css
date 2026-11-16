@@ -1,0 +1,59 @@
+@import "vazirmatn/misc/Farsi-Digits/Vazirmatn-FD-font-face.css";
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: "Vazirmatn FD", "Vazirmatn", Tahoma, sans-serif;
+  }
+
+  html,
+  body,
+  button,
+  input,
+  select,
+  textarea,
+  table,
+  svg text {
+    font-family: "Vazirmatn FD", "Vazirmatn", Tahoma, sans-serif;
+  }
+
+  body {
+    direction: rtl;
+    text-align: right;
+    font-feature-settings: "ss01" 1, "tnum" 1;
+  }
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.28);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.48);
+}
+
+/* Tabular numbers for clean financial/executive alignment */
+.tabular-fa {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "ss01" 1, "tnum" 1;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+  }
+}
